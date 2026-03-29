@@ -250,3 +250,78 @@ textarea {
     background-color: var(--primary-blue);
     color: white;
 }
+
+.btn-delete {
+    background-color: var(--required-color);
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.summary-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #f8fcfd;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-blue);
+}
+
+.summary-box {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.summary-box h3 {
+    margin-top: 0;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.summary-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-blue);
+    margin: 10px 0;
+}
+
+.summary-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.summary-box li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 4px;
+}
+
+.summary-box li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .summary-panel {
+        grid-template-columns: 1fr;
+    }
+}
